@@ -13,6 +13,9 @@ var callback = function(){
 		}, 2000);
 	});
 	$('.my-age').html(getAge('May 2, 1988 00:00:01'));
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	});
 };
 $(document).ready(callback);
 
