@@ -6,15 +6,22 @@ var callback = function(){
 			width: newWidth,
 		}, 1000);
 	});
+	
 	$('.icons-red').each(function(){
 		height = $(this).height();
 		$(this).animate({
 			height: 14,
 		}, 2000);
 	});
+	
 	$('.my-age').html(getAge('May 2, 1988 00:00:01'));
+	
 	$(function () {
-  		$('[data-toggle="tooltip"]').tooltip()
+  		$('[data-toggle="tooltip"]').tooltip({
+			  animated: 'fade',
+			  placement: 'top',
+			  html: true
+		  });
 	});
 };
 $(document).ready(callback);

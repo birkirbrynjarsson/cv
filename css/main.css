@@ -206,10 +206,12 @@ EXPERIENCES
 .job .where{
   font-size: 1.4em;
   font-weight: bold;
+  word-wrap: break-word;
 }
 .job .year{
   font-size: 1.3em;
   opacity: 0.7;
+  word-wrap: break-word;
 }
 .job .profession{
   font-size: 1.6em;
@@ -405,4 +407,17 @@ MEDIA
   #education .description{
     width: 90%;
   }
+}
+
+/* Birkir mods */
+.tooltip-inner > img {
+  height: 80px;
+  padding: 6px 10px 6px 0;
+  float: left;
+}
+
+.tooltip-inner > img:after {
+  content: "";
+  display: table;
+  clear: both;
 }
