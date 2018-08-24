@@ -426,3 +426,11 @@ MEDIA
   display: table;
   clear: both;
 }
+
+.h-break{
+  width: 100%;
+  height: 3px;
+  margin: 15px 0;
+  background: url(../img/line.png);
+  display: block;
+}
