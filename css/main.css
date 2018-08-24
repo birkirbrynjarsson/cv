@@ -221,6 +221,11 @@ EXPERIENCES
   font-size: 1.2em;
   line-height: 1.5em;
 }
+.job .col-xs-3 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 /*******************************************
 CONTACT
 *******************************************/
