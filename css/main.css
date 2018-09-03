@@ -414,6 +414,12 @@ MEDIA
   }
 }
 
+@media print {    
+  .no-print, .no-print * {
+      display: none !important;
+  }
+}
+
 /* Birkir mods */
 .tooltip-inner > img {
   height: 80px;
