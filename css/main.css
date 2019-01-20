@@ -245,6 +245,9 @@ CONTACT
 .contact-item .fa{
   font-size: 2em;
 }
+.contact-item .fab{
+  font-size: 2em;
+}
 .contact-item .title{
   width: 80%;
   width: calc(100% - 55px);
@@ -343,43 +346,17 @@ LANGUAGES
 /*******************************************
 HOBBIES
 *******************************************/
-.hobby{
+.hobby {
   color: #fff;
   display: inline-block;
   margin-right: 5px;
-  margin-bottom: 5px;
-  padding: 5px 5px 5px 25px;
+  margin-bottom: 7px;
+  padding: 5px 7px;
   /*background: #A75265; */
   background: #c78101;
   /*background: #6392ea;*/
   position: relative;
-  font-size: 1.2em;
-}
-.hobby:before{
-  content: "\f004";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  position: absolute;
-  top: 6px;
-  left: 7px;
-}
-.hobby-football:before{
-  content: "\f1e3"
-}
-.hobby-music:before{
-  content: "\f001";
-}
-.hobby-info:before{
-  content: "\f129";
-  left: 9px;
-}
-.hobby-camera:before{
-  /*content: "\f083";*/
-  content: "\f030";
-}
-.hobby-games:before{
-  content: "\f11b";
+  font-size: 1.4em; 
 }
 /*******************************************
 RECOMMEND
