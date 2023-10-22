@@ -247,18 +247,133 @@
                     >AGR</a
                   >
                 </div>
-                <div class="year">Haust 2018 -</div>
+                <div class="year">2018 - 2024</div>
               </div>
               <div class="col-xs-9">
                 <div class="profession">Hugbúnaðarsérfræðingur</div>
                 <div class="description">
-                  AGR þróar hugbúnað til birgðastjórnunar og hagræðingar fyrir
-                  stór og meðalstór fyrirtæki. Fyrsta árið mitt fór í að
-                  endurskrifa framenda kerfisins í Angular en síðan þá hefur
-                  kennt ýmissa grasa. Innleiðing á útgáfuferli, CI, CD, E2E
-                  prófanir, uppfærsla á bakenda í .NET og fleira. Í byrjun árs
-                  2023 er AGR lausnin loks komin í skýið sem er stórt skref frá
-                  því að vera aðeins í boði sem on premise lausn.
+                  AGR þróar hugbúnað til birgðastjórnunar og
+                  innkaupa-hagræðingar fyrir stór og meðalstór fyrirtæki. Meðal
+                  verkefna sem ég leysti eða tók þátt í að leysa hjá AGR má
+                  helst nefna:
+                  <br />
+                  <strong>AGR Client</strong>, endurskrif úr
+                  <a href="https://angularjs.org/">AngularJS</a> í
+                  <a href="https://angular.io/">Angular</a>. Setti upp
+                  <a href="https://eslint.org/">ESLint</a> reglur,
+                  <a href="https://www.typescriptlang.org/tsconfig#strict"
+                    >strict typechecking</a
+                  >, innleiddi data validation pattern, útfærði i18n og l10n,
+                  data formatting, timezone-, session management, application
+                  bootstrap. Kom að þróun flestra módúla/feature. Unnið með
+                  <a
+                    href="https://www.highcharts.com/"
+                    data-toggle="tooltip"
+                    title="Highcharts - Simply visualize, the only charting library you need."
+                    >Highcharts</a
+                  >
+                  og
+                  <a
+                    href="https://www.ag-grid.com/"
+                    data-toggle="tooltip"
+                    title="AG Grid, the best JavaScript grid in the world."
+                    >AG Grid</a
+                  >.
+                  <br />
+                  <strong
+                    ><a
+                      href="https://pool.agrdynamics.com/swagger/"
+                      data-toggle="tooltip"
+                      title="AGR - Shared Data Repository"
+                      >AGR Pool</a
+                    ></strong
+                  >,
+                  <a
+                    href="https://nestjs.com/"
+                    data-toggle="tooltip"
+                    title="A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
+                    >NestJS</a
+                  >
+                  bakendi og API fyrir sameiginleg gögn í AGR kerfinu
+                  (translations). Docker container keyrandi sem
+                  <a
+                    href="https://azure.microsoft.com/en-us/products/app-service"
+                    >App Service</a
+                  >
+                  á Azure og
+                  <a
+                    href="https://azure.microsoft.com/en-us/products/azure-sql/database"
+                    >MSSql</a
+                  >
+                  gagnagrunnur. Svo client til að bæta við tungumálum og
+                  þýðingum með tengingu við
+                  <a
+                    href="https://cloud.google.com/translate/docs/reference/rest"
+                    >Google Translate API</a
+                  >
+                  fyrir tillögur og möguleika á að hlaða
+                  <a href="https://cldr.unicode.org/">CLDR</a> locale skrám
+                  dýnamiskt í AGR Client.
+                  <br />
+                  <strong
+                    ><a
+                      href="https://releases.agrinventory.com/"
+                      data-toggle="tooltip"
+                      title="AGR Release Page"
+                      >Release Page</a
+                    ></strong
+                  >: Python scripta sem sækir gögn frá
+                  <a
+                    href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+                    >GitHub releases</a
+                  >
+                  og spýtir út statískar HTML síður. Deployað á
+                  <a
+                    href="https://azure.microsoft.com/en-us/products/virtual-machines"
+                    >Azure VPS</a
+                  >, með <a href="https://www.nginx.com/">Nginx</a>,
+                  <a href="https://certbot.eff.org/">Certbot</a> og
+                  <a href="https://github.com/adnanh/webhook">Webhook</a> fyrir
+                  sjálfvirkt build og deployment. Setti upp samskonar CD fyrir
+                  <a
+                    href="https://docs.agrinventory.com/"
+                    title="AGR Documentation and Manuals"
+                    >AGR documentation</a
+                  >.
+                  <br />
+                  <strong>AGR Service</strong>: Endurskrif á bakenda úr .NET í
+                  .NET Core til að undirbúa AGR lausnina fyrir skýið (SOA eða
+                  Microservices). Setti upp CI pipeline til að ganga úr skugga
+                  um að EF Model væru í sync við database-first gagnagrunn auk
+                  þess að framfylgja Lint reglum með
+                  <a href="https://editorconfig.org/">EditorConfig</a>.
+                  <br />
+                  <strong
+                    ><a href="https://portal.agrdev.cloud/"
+                      >Login Portal</a
+                    ></strong
+                  >: Angular client fyrir AGR Essentials skýja-lausnina.
+                  <br />
+                  <strong>Support Client</strong>: Hannaði og forritaði létt
+                  Angular kerfi sem ég kallaði Snek, til að hafa yfirlit og
+                  umsjón með AGR Essentials notendur (tenants). Allir
+                  componentar standalone og lazy loadaðir og Service Worker
+                  (PWA) sem prefetchar nýjar útgáfur.
+                  <br />
+                  <strong>State Management</strong>: Innleiddi redux-líkt state
+                  management í Angular með
+                  <a href="https://rxjs.dev/">RxJS</a> þar sem þjónustur geyma
+                  gögn í
+                  <a href="https://rxjs.dev/guide/subject">Subject</a> (store)
+                  og viðmót fyrir aðgerðir (action) sem triggerar sync við API
+                  (effect) og reducer sem uppfærir gögnin. Endurskrifaði Reports
+                  hluta AGR Client kerfisins með þessum hætti auk þess að
+                  forrita alla componenta á declarative reactive máta.
+                  <br />
+                  <strong>Prófanir</strong>: E2E prófanir með
+                  <a href="https://www.cypress.io/">Cypress</a>, þar á undan
+                  Protractor og unit/component test með Cypress og
+                  <a href="https://jestjs.io/">Jest</a>, þar á undan Karma.
                 </div>
               </div>
             </div>
@@ -621,11 +736,15 @@
           <div class="box no-print">
             <h2>Verkfæri</h2>
             <div class="hobby">
-              <i class="fab fa-git"></i> <a href="https://git-scm.com/">Git</a>
+              <a href="https://git-scm.com/">Git</a>
             </div>
             <div class="hobby">
               <i class="fab fa-git"></i>
               <a href="https://github.com/features/copilot">Copilot</a>
+            </div>
+            <div class="hobby">
+              <i class="fab fa-git"></i>
+              <a href="https://github.com/features/actions">Actions</a>
             </div>
             <div class="hobby">
               <i class="fab fa-angular"></i>
