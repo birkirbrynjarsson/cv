@@ -39,9 +39,37 @@ body {
 CONTAINER
 *******************************************/
 .container {
+  background: #fff;
+}
+
+.main-container {
   margin-top: 100px;
   margin-bottom: 15px;
-  background: #fff;
+}
+
+.language-switcher {
+  margin-top: 5px;
+  text-align: right;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.language-switcher a {
+  color: #363636;
+  text-decoration: none;
+}
+
+.language-switcher a:hover,
+.language-switcher a:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .language-switcher {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 /*******************************************
 PHOTO (AVATAR)
